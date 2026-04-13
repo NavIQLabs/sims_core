@@ -20,11 +20,7 @@ with mujoco.viewer.launch_passive(model, data) as viewer:
         step_start = time.time()
 
         t = data.time
-        data.ctrl[0] = np.sin(t) * 1.0
-        data.ctrl[1] = np.cos(t) * 0.5
-
         mujoco.mj_step(model, data)
-
         viewer.sync()
 
         time_until_next_step = model.opt.timestep - (time.time() - step_start)

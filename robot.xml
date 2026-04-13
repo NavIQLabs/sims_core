@@ -24,7 +24,7 @@
     <mesh name="link6_1"   content_type="model/stl" file="piper/link6_1.STL" />
     <mesh name="link7"     content_type="model/stl" file="piper/link7.STL" />
     <mesh name="link8"     content_type="model/stl" file="piper/link8.STL" />
-    <texture name="texplane" type="2d" builtin="checker" rgb1=".0 .0 .0" rgb2=".8 .8 .8" width="100" height="100" />
+<texture name="texplane" type="2d" builtin="checker" rgb1=".0 .0 .0" rgb2=".8 .8 .8" width="100" height="100" />
     <material name="matplane" reflectance="0." texture="texplane" texrepeat="1 1" texuniform="true" />
     <material name="visualgeom" rgba="0.5 0.9 0.2 1" />
   </asset>
@@ -44,10 +44,6 @@
       <geom type="mesh" rgba="0.792157 0.819608 0.933333 1" mesh="base_link" pos="0.13 -0.3 0.8" quat="1 0 0 0" />
       <geom pos="0 0.75 0" quat="0.707388 0.706825 0 0" type="mesh" rgba="0.6 0.6 0.6 1" mesh="table" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
       <geom type="mesh" rgba="0.6 0.6 0.6 1" mesh="table" pos="0 0.75 0" quat="0.707388 0.706825 0 0" />
-      <geom size="0.3175 0.441 0.39" pos="-0.136805 0.00133473 1.0416" quat="0.000563312 0.000562864 0.707388 0.706825" type="box" rgba="0.3 0.3 0.3 1" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
-      <geom type="box" rgba="0.3 0.3 0.3 1" size="0.3175 0.441 0.39" pos="-0.136805 0.00133473 1.0416" quat="0.000563312 0.000562864 0.707388 0.706825" />
-      <geom size="0.013 0.062 0.0145" pos="-0.175691 0.00174196 1.46291" quat="-0.980224 0.000622869 -0.197889 0.000938785" type="box" contype="1" conaffinity="0" density="0" group="1" class="visualgeom" />
-      <geom type="box" rgba="" size="0.013 0.062 0.0145" pos="-0.175691 0.00174196 1.46291" quat="-0.980224 0.000622869 -0.197889 0.000938785" />
       <body name="left_link1" pos="0.13 0.3 0.923" quat="0.707105 0 0 -0.707108">
         <inertial pos="0.00131676 0.000310289 -0.00922875" quat="0.557105 0.432155 0.377373 0.600388" mass="0.097868" diaginertia="9.25942e-05 8.3083e-05 7.69469e-05" />
         <joint name="left_joint1" pos="0 0 0" axis="0 0 1" range="-2.618 2.618" actuatorfrcrange="-100 100" />

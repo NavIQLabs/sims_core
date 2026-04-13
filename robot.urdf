@@ -6,9 +6,6 @@
   <material name="table_grey">
     <color rgba="0.6 0.6 0.6 1.0" />
   </material>
-  <material name="ebox_dark_grey">
-    <color rgba="0.3 0.3 0.3 1.0" />
-  </material>
   <link name="table_corner">
     <visual>
       <geometry>
@@ -22,21 +19,6 @@
       </geometry>
     </collision>
   </link>
-  <link name="ebox">
-    <visual>
-      <origin xyz="0.318 0.441 0.750" rpy="0 0 0" />
-      <geometry>
-        <box size="0.635 0.882 0.780" />
-      </geometry>
-      <material name="ebox_dark_grey" />
-    </visual>
-    <collision>
-      <origin xyz="0.318 0.441 0.750" rpy="0 0 0" />
-      <geometry>
-        <box size="0.635 0.882 0.780" />
-      </geometry>
-    </collision>
-  </link>
   <joint name="world_to_base" type="fixed">
     <parent link="world" />
     <child link="base" />
@@ -47,11 +29,6 @@
     <child link="table_corner" />
     <origin rpy="1.57 0 0" xyz="0 0.75 0" />
   </joint>
-  <joint name="table_to_ebox" type="fixed">
-    <parent link="table_corner" />
-    <child link="ebox" />
-    <origin rpy="0 3.14 0" xyz="0.18 0.6 1.5" />
-  </joint>
   <joint name="base_to_left_base" type="fixed">
     <parent link="base" />
     <child link="left_base_link" />
@@ -61,11 +38,6 @@
     <parent link="base" />
     <child link="right_base_link" />
     <origin rpy="0 0 0" xyz="0 -0.3 0" />
-  </joint>
-  <joint name="ebox_to_cam" type="fixed">
-    <parent link="ebox" />
-    <child link="center_cam" />
-    <origin rpy="1.57 0.0 3.14" xyz="0.365 0.85 0.75" />
   </joint>
   <ros2_control name="left_PiperHardwareSystem" type="system">
     <hardware>
@@ -1029,6 +1001,11 @@
       <inertia ixx="0.003881243" ixy="0.0" ixz="0.0" iyy="0.000498940" iyz="0.0" izz="0.003879257" />
     </inertial>
   </link>
+  <joint name="world_to_cam" type="fixed">
+    <parent link="world" />
+    <child link="center_cam" />
+    <origin rpy="1.57 0.0 3.14" xyz="0.365 0.85 0.75" />
+  </joint>
   <joint name="center_cam_joint" type="fixed">
     <origin rpy="0.0 0.4 0.0" xyz="0.0 0.0 0.0" />
     <parent link="center_cam" />
