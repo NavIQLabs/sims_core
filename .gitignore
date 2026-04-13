@@ -1,4 +1,3 @@
 .venv/
 robot_usd/
 _robot_tmp.urdf
-robot.xml
