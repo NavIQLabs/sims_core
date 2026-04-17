@@ -274,20 +274,28 @@ class ControllerManager:
             control_mode             = "pd_joint_pos",
             render_mode              = render_mode,
             sim_backend              = self.cfg.sim_backend,
-            parallel_in_single_scene = self.cfg.render.gui,
+            parallel_in_single_scene = self.cfg.render.gui and self.cfg.num_envs > 1,
             sim_cfg                  = self.cfg,
             robot_uid                = robot_uid,
         )
 
     def run(self) -> None:
-        obs, _  = self.env.reset()
-        n       = self.env.unwrapped.num_envs
-        action  = np.zeros((n, *self.env.single_action_space.shape))
+        import time
+        obs, _       = self.env.reset()
+        n            = self.env.unwrapped.num_envs
+        action       = np.zeros((n, *self.env.single_action_space.shape))
+        control_dt   = self.env.unwrapped.control_timestep
         try:
             while True:
+                t0 = time.perf_counter()
                 self.env.step(action)
                 if self.cfg.render.gui:
                     self.env.render()
+                if self.cfg.real_time:
+                    elapsed = time.perf_counter() - t0
+                    remaining = control_dt - elapsed
+                    if remaining > 0:
+                        time.sleep(remaining)
         except KeyboardInterrupt:
             pass
 

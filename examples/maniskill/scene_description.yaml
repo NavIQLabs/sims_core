@@ -1,5 +1,5 @@
 num_envs: 2
-backend: "auto"
+backend: "auto" # uses cpu when n = 1
 
 robot:
   urdf:     /home/straw/Projects/garage/sims_maniskill_wt/examples/test.urdf
@@ -11,13 +11,6 @@ background:
 
 scene:
   objects:
-    - name:   mug
-      type:   sphere
-      static: false
-      radius: 0.04
-      color:  [0.9, 0.6, 0.1, 1.0]
-      pose:   [0.5, 0.0, 2.0]
-
     - name:   small_box
       type:   box
       static: false
@@ -33,13 +26,10 @@ scene:
 
 randomization:
   objects:
-    - name: mug
-      x: [-0.25, 0.25]
-      y: [-0.35,  0.35]
-
     - name: small_box
       x: [-0.25, 0.25]
       y: [-0.35,  0.35]
+      yaw: [0, 1.57]
 
 lighting:
   ambient: [0.4, 0.0, 0.4]
@@ -52,7 +42,7 @@ lighting:
 render:
   gui: true
   camera:
-    eye:    [-0.8, 0.0, 2.0]
-    target: [0.0, 0.0, 1.0]
+    eye:    [-0.8, 1.0, 2.0]
+    target: [0.0, 1.0, 1.0]
     width:  1280
     height: 720

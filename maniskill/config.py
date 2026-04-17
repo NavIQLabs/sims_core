@@ -108,6 +108,7 @@ class SimConfig:
     render:        RenderConfig        = field(default_factory=RenderConfig)
     num_envs:      int                 = 1
     sim_backend:   str                 = "auto"  # auto | cpu | gpu | cuda:0 etc.
+    real_time:     bool                = False
 
 
 def parse_pose(p: list[float]) -> sapien.Pose:
@@ -210,4 +211,5 @@ def load(path: str) -> SimConfig:
         render        = render,
         num_envs      = int(raw.get("num_envs",    1)),
         sim_backend   = str(raw.get("sim_backend", raw.get("backend", "auto"))),
+        real_time     = bool(raw.get("real_time",  False)),
     )
