@@ -1,6 +1,0 @@
-mani-skill
-torch
-numpy==1.24.2
-urdf-usd-converter
-urdf2mjcf
-mujoco
