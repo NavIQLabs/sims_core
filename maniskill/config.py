@@ -62,6 +62,7 @@ class ObjectRandomization:
     x:    list[float] | None = None   # [min, max]
     y:    list[float] | None = None
     z:    list[float] | None = None
+    yaw:  list[float] | None = None   # [min, max] radians, rotation around Z
 
 
 # Per-light domain randomization.
@@ -105,6 +106,8 @@ class SimConfig:
     lighting:      LightingConfig      = field(default_factory=LightingConfig)
     randomization: DomainRandomization = field(default_factory=DomainRandomization)
     render:        RenderConfig        = field(default_factory=RenderConfig)
+    num_envs:      int                 = 1
+    sim_backend:   str                 = "auto"  # auto | cpu | gpu | cuda:0 etc.
 
 
 def parse_pose(p: list[float]) -> sapien.Pose:
@@ -170,9 +173,10 @@ def load(path: str) -> SimConfig:
         objects=[
             ObjectRandomization(
                 name = o["name"],
-                x    = o.get("x", None),
-                y    = o.get("y", None),
-                z    = o.get("z", None),
+                x    = o.get("x",   None),
+                y    = o.get("y",   None),
+                z    = o.get("z",   None),
+                yaw  = o.get("yaw", None),
             )
             for o in dr_raw.get("objects", [])
         ],
@@ -204,4 +208,6 @@ def load(path: str) -> SimConfig:
         lighting      = lighting,
         randomization = randomization,
         render        = render,
+        num_envs      = int(raw.get("num_envs",    1)),
+        sim_backend   = str(raw.get("sim_backend", raw.get("backend", "auto"))),
     )
