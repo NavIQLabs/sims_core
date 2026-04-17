@@ -119,13 +119,19 @@ def parse_pose(p: list[float]) -> sapien.Pose:
 
 
 def load(path: str) -> SimConfig:
+    import os
+    base = os.path.dirname(os.path.abspath(path))
+
+    def abs(p: str) -> str:
+        return p if os.path.isabs(p) else os.path.join(base, p)
+
     with open(path) as f:
         raw = yaml.safe_load(f)
 
     assert "robot" in raw, "config missing 'robot' section"
 
     robot = RobotConfig(
-        urdf     = raw["robot"]["urdf"],
+        urdf     = abs(raw["robot"]["urdf"]),
         fix_root = raw["robot"].get("fix_root", True),
         pose     = raw["robot"].get("pose",     [0.0, 0.0, 0.0]),
     )
@@ -137,7 +143,7 @@ def load(path: str) -> SimConfig:
             type        = o["type"],
             static      = o.get("static", True),
             pose        = o.get("pose",   [0.0, 0.0, 0.0]),
-            path        = o.get("path",   None),
+            path        = abs(o["path"]) if o.get("path") else None,
             size        = o.get("size",   None),
             radius      = o.get("radius", None),
             half_length = o.get("half_length", None),
@@ -149,7 +155,7 @@ def load(path: str) -> SimConfig:
     bg_raw = raw.get("background", {})
     background = BackgroundConfig(
         type = bg_raw.get("type", "void"),
-        path = bg_raw.get("path", None),
+        path = abs(bg_raw["path"]) if bg_raw.get("path") else None,
     )
 
     lighting_raw = raw.get("lighting", {})

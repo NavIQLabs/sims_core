@@ -2,9 +2,9 @@ num_envs: 2
 backend: "auto" # uses cpu when n = 1
 
 robot:
-  urdf:     /home/straw/Projects/garage/sims_maniskill_wt/examples/test.urdf
+  urdf:     ../test.urdf
   fix_root: true
-  pose:     [0.0, 0.0, 0.0]   # raised to counter height
+  pose:     [0.0, 0.0, 0.0]
 
 background:
   type: ground
@@ -20,7 +20,7 @@ scene:
 
     - name:   cardboard_box
       type:   urdf
-      path:   /home/straw/Projects/garage/sims_maniskill_wt/examples/cardboard_box.urdf
+      path:   ../cardboard_box.urdf
       static: false
       pose:   [0.5, 0.0, 2.0]
 
