@@ -9,13 +9,13 @@
   <link name="table_corner">
     <visual>
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/workcell/table.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/workcell/table.STL" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="table_grey" />
     </visual>
     <collision>
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/workcell/table.STL" scale="0.001 0.001 0.001" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/workcell/table.STL" scale="0.001 0.001 0.001" />
       </geometry>
     </collision>
   </link>
@@ -149,7 +149,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/base_link.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/base_link.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -158,7 +158,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/base_link.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -171,7 +171,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link1.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link1.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -180,7 +180,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link1.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -200,7 +200,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link2.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link2.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -209,7 +209,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link2.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -229,7 +229,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link3.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link3.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -238,7 +238,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link3.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -258,7 +258,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link4.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link4.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -267,7 +267,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link4.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -287,7 +287,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link5.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link5.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -296,7 +296,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link5.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -316,7 +316,7 @@
     <visual>
       <origin rpy="0 0 1.5708" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link6.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link6.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -325,7 +325,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link6_1.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link6_1.STL" />
       </geometry>
     </collision>
   </link>
@@ -345,7 +345,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link7.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link7.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -354,7 +354,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link7.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link7.STL" />
       </geometry>
     </collision>
   </link>
@@ -374,7 +374,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link8.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link8.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -383,7 +383,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link8.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link8.STL" />
       </geometry>
     </collision>
   </link>
@@ -596,7 +596,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/base_link.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/base_link.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -605,7 +605,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/base_link.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -618,7 +618,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link1.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link1.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -627,7 +627,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link1.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link1.STL" />
       </geometry>
     </collision>
   </link>
@@ -647,7 +647,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link2.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link2.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -656,7 +656,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link2.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -676,7 +676,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link3.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link3.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -685,7 +685,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link3.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link3.STL" />
       </geometry>
     </collision>
   </link>
@@ -705,7 +705,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link4.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link4.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -714,7 +714,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link4.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link4.STL" />
       </geometry>
     </collision>
   </link>
@@ -734,7 +734,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link5.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link5.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -743,7 +743,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link5.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link5.STL" />
       </geometry>
     </collision>
   </link>
@@ -763,7 +763,7 @@
     <visual>
       <origin rpy="0 0 1.5708" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link6.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link6.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -772,7 +772,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link6_1.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link6_1.STL" />
       </geometry>
     </collision>
   </link>
@@ -792,7 +792,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link7.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link7.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -801,7 +801,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link7.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link7.STL" />
       </geometry>
     </collision>
   </link>
@@ -821,7 +821,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link8.dae" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link8.dae" />
       </geometry>
       <material name="">
         <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
@@ -830,7 +830,7 @@
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/piper/link8.STL" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/piper/link8.STL" />
       </geometry>
     </collision>
   </link>
@@ -954,7 +954,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0038 -0.009 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/camera/d405.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/camera/d405.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="aluminum" />
     </visual>
@@ -985,7 +985,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0038 -0.009 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/camera/d405.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/camera/d405.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="aluminum" />
     </visual>
@@ -1021,7 +1021,7 @@
     <visual>
       <origin rpy="1.5707963267948966 0 1.5707963267948966" xyz="0.0046500000000000005 -0.0475 0" />
       <geometry>
-        <mesh filename="{SIMS_CORE}/meshes/camera/d455.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="{SIMS_CORE}/examples/meshes/camera/d455.stl" scale="0.001 0.001 0.001" />
       </geometry>
       <material name="aluminum" />
     </visual>
