@@ -59,16 +59,12 @@ def main() -> None:
     print(f"action space: {entity._env.action_space}")
 
     # -- set initial zero targets on all joint-position controllers ----------
+    num_envs = entity._env.unwrapped.num_envs
     ctrl_mgr = entity.controller_manager
-    for ctrl_cfg_name in ["left_arm", "right_arm"]:
-        ctrl = ctrl_mgr[ctrl_cfg_name]
+    for name in ["left_arm", "right_arm", "left_gripper", "right_gripper"]:
+        ctrl = ctrl_mgr[name]
         n    = len(ctrl.controlled_joints)
-        ctrl.set_target(torch.zeros(1, n))
-
-    for ctrl_cfg_name in ["left_gripper", "right_gripper"]:
-        ctrl = ctrl_mgr[ctrl_cfg_name]
-        n    = len(ctrl.controlled_joints)
-        ctrl.set_target(torch.zeros(1, n))
+        ctrl.set_target(torch.zeros(num_envs, n))
 
     # -- control loop --------------------------------------------------------
     for step in range(args.steps):
